@@ -15,19 +15,34 @@ class SecondComposerService{
     
     private var dashboardService: SecondDashboardService?
     private var ioService: SecondIoService = SecondIoService()
+    private var timeline: UIView?
+    private var config: SecondConfigModel?
     
     init(configData: String, vc: UIViewController) {
         self.vc = vc
         self.configData = configData
         initializeDashboardService()
         ioService.subscribe(subscriber: self)
-        
+        initializeTimeline()
+    }
+    
+    func configTemplateView(templateView: TemplateFillScreenView){
+        if let timeline = timeline{
+        templateView.setTimeLine(timeLine: timeline)
+        }
+    }
+    
+    private func initializeTimeline(){
+        if let config = config{
+            timeline = SecondTimelineFactory(config: config, ioService: ioService, pickerButtonDelegate: self).getTimeline()
+        }
         
     }
     
     private func initializeDashboardService(){
         if let config = VideoComposerConfigParser().getSecondSystemConfigObject(config: configData){
             dashboardService = SecondDashboardService(composerConfig: config)
+            self.config = config
         }
     }
 }
@@ -48,8 +63,8 @@ extension SecondComposerService: SecondIoServiceSubscriber{
                 item.duration = getComposerItemTimeRange(duration: currentItem.duration)
                 dashboardService?.addNewComposerItemToDashboard(item: item)
             }
-               
-                
+            
+            
             
         }
     }

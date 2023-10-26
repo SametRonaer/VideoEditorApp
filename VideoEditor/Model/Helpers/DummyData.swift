@@ -35,4 +35,29 @@ class DummyData{
 }
 
 """
+    
+    static let secondDummyTimeline: String = """
+{
+            "clipSoundUrl": "",
+            "sequences": [
+        {
+            "type": 1,
+            "duration": 25.0
+        },
+        {
+            "type": 1,
+            "duration": 10.0
+        },
+        {
+            "type": 1,
+            "duration": 5.0
+        },
+        {
+            "type": 1,
+            "duration": 25.0
+        }
+    ]
+}
+
+"""
 }

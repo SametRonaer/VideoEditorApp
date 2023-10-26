@@ -11,6 +11,7 @@ import AVFoundation
 class TemplateFillScreenVC: UIViewController {
     
     var videoPlayerService: VideoPlayerService?
+    var secondCompeserService: SecondComposerService?
     
     var templateFillScreenView: TemplateFillScreenView!
     
@@ -20,11 +21,7 @@ class TemplateFillScreenVC: UIViewController {
     init(videoPlayerService: VideoPlayerService?, view:UIView? = nil) {
         super.init(nibName: nil, bundle: nil)
         self.videoPlayerService = videoPlayerService
-        if let vcView = view{
-          //  self.videoPlayerService.
-        }else{
-            
-        }
+       
     }
     
     
@@ -43,7 +40,8 @@ class TemplateFillScreenVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.videoPlayerService = VideoPlayerService(playerView: self.view, vc: self)
+        //self.videoPlayerService = VideoPlayerService(playerView: self.view, vc: self)
+        self.secondCompeserService = SecondComposerService(configData: DummyData.secondDummyTimeline, vc: self)
         configureTemplateView()
         
     }
@@ -56,8 +54,8 @@ class TemplateFillScreenVC: UIViewController {
         templateFillScreenView.backgroundColor = .white
         templateFillScreenView.delegate = self
         
-        videoPlayerService?.configTemplateView(configData:  DummyData.dummyTimeline, templateView: templateFillScreenView)
-      
+       // videoPlayerService?.configTemplateView(configData:  DummyData.dummyTimeline, templateView: templateFillScreenView)
+        secondCompeserService?.configTemplateView(templateView: templateFillScreenView)
         view = templateFillScreenView
     }
     

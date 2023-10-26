@@ -18,7 +18,7 @@ struct SecondMediaSquenceModel: Codable{
     var assetPath: String?
     let duration: Double
     let type: Int
-    var id:UUID?
+    var id:UUID? = UUID()
 }
 
 
