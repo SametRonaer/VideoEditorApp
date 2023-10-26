@@ -22,5 +22,20 @@ class VideoComposerConfigParser{
         }
     }
     
+    //Second sytem func
+    
+    func getSecondSystemConfigObject(config: String) -> SecondConfigModel?{
+        let data = config.data(using: .utf8)!
+        let decoder = JSONDecoder()
+        do {
+            let config = try decoder.decode(SecondConfigModel.self, from: data)
+            print(config)
+            return config
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
+    
 }
 
