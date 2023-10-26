@@ -20,8 +20,17 @@ class TemplateFillScreenView: UIView{
     
     init() {
         super.init(frame: CGRect.zero)
+        let button = UIButton()
+        button.setTitle("Play", for: .normal)
+        button.backgroundColor = .blue
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(play), for: .touchUpInside)
+        addSubview(button)
+        button.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        button.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
       
     }
+    
     
     @objc func play(){
         print("Play here")

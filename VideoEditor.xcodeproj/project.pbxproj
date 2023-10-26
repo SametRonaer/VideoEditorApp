@@ -21,6 +21,7 @@
 		1C7AAB822AE9C15D009052B5 /* SecondHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB812AE9C15D009052B5 /* SecondHelperFunctions.swift */; };
 		1C7AAB842AE9D751009052B5 /* SecondPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB832AE9D751009052B5 /* SecondPickerButton.swift */; };
 		1C7AAB862AEA8F92009052B5 /* SecondTimelineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB852AEA8F92009052B5 /* SecondTimelineFactory.swift */; };
+		1C7AAB882AEAB5E6009052B5 /* SecondPlayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB872AEAB5E6009052B5 /* SecondPlayService.swift */; };
 		1CA3D4142AD7C66A000B9CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4132AD7C66A000B9CD9 /* AppDelegate.swift */; };
 		1CA3D4162AD7C66A000B9CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4152AD7C66A000B9CD9 /* SceneDelegate.swift */; };
 		1CA3D4182AD7C66A000B9CD9 /* TemplateFillScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4172AD7C66A000B9CD9 /* TemplateFillScreenVC.swift */; };
@@ -54,6 +55,7 @@
 		1C7AAB812AE9C15D009052B5 /* SecondHelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHelperFunctions.swift; sourceTree = "<group>"; };
 		1C7AAB832AE9D751009052B5 /* SecondPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPickerButton.swift; sourceTree = "<group>"; };
 		1C7AAB852AEA8F92009052B5 /* SecondTimelineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTimelineFactory.swift; sourceTree = "<group>"; };
+		1C7AAB872AEAB5E6009052B5 /* SecondPlayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPlayService.swift; sourceTree = "<group>"; };
 		1CA3D4102AD7C66A000B9CD9 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA3D4132AD7C66A000B9CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA3D4152AD7C66A000B9CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				1C7AAB7B2AE9B782009052B5 /* SecondDashboardService.swift */,
 				1C7AAB7D2AE9B796009052B5 /* SecondComposerService.swift */,
 				1C7AAB7F2AE9BA46009052B5 /* SecondIoService.swift */,
+				1C7AAB872AEAB5E6009052B5 /* SecondPlayService.swift */,
 			);
 			path = SecondSystem;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				1CA3D4382AD99F53000B9CD9 /* AssetPickerButton.swift in Sources */,
 				1CEDA4D12AE6E53C000AE48C /* DummyData.swift in Sources */,
 				1CA3D43E2ADAB40A000B9CD9 /* TimelineFactory.swift in Sources */,
+				1C7AAB882AEAB5E6009052B5 /* SecondPlayService.swift in Sources */,
 				1C02078B2AE29570002EDDC3 /* AssetEditServiceAbstract.swift in Sources */,
 				1CA3D42C2AD7C7A0000B9CD9 /* AssetIOService.swift in Sources */,
 				1CA3D4182AD7C66A000B9CD9 /* TemplateFillScreenVC.swift in Sources */,

@@ -82,7 +82,8 @@ extension TemplateFillScreenVC: TemplateFillScreenViewDelegate{
     }
     
     func playVideo() {
-        videoPlayerService?.playCurrentComposition()
+        //videoPlayerService?.playCurrentComposition()
+        secondCompeserService?.playCurrentComposition()
     }
     
    

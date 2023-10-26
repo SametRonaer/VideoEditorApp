@@ -29,6 +29,7 @@ class VideoComposerConfigParser{
         let decoder = JSONDecoder()
         do {
             let config = try decoder.decode(SecondConfigModel.self, from: data)
+            config.sequences.forEach {$0.id = UUID()}
             print(config)
             return config
         } catch {

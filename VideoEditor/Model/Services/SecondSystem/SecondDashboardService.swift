@@ -10,7 +10,7 @@ import Foundation
 
 class SecondDashboardService{
     let composerConfig: SecondConfigModel
-    private var composerItems: [SecondVideoComposerItem] = .init()
+    var composerItems: [SecondVideoComposerItem] = .init()
     init(composerConfig: SecondConfigModel) {
         self.composerConfig = composerConfig
     }

@@ -15,6 +15,7 @@ class SecondComposerService{
     
     private var dashboardService: SecondDashboardService?
     private var ioService: SecondIoService = SecondIoService()
+    private var playService: SecondPlayService = SecondPlayService(frame: CGRectMake(30, 30, 150, 250))
     private var timeline: UIView?
     private var config: SecondConfigModel?
     
@@ -24,13 +25,26 @@ class SecondComposerService{
         initializeDashboardService()
         ioService.subscribe(subscriber: self)
         initializeTimeline()
+        
     }
     
     func configTemplateView(templateView: TemplateFillScreenView){
         if let timeline = timeline{
         templateView.setTimeLine(timeLine: timeline)
+            if let playerLayer = playService.playerLayer{
+                templateView.layer.addSublayer(playerLayer)
+            }
         }
     }
+    
+    func playCurrentComposition(){
+        print("Play")
+        if let items = dashboardService?.composerItems{
+            playService.playCurrentComposition(items: items)
+        }
+    }
+    
+    
     
     private func initializeTimeline(){
         if let config = config{

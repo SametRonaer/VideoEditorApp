@@ -9,12 +9,12 @@ import Foundation
 import AVFoundation
 
 
-struct SecondConfigModel: Codable{
+class SecondConfigModel: Codable{
     let sequences: [SecondMediaSquenceModel]
     let audioUrl: String?
 }
 
-struct SecondMediaSquenceModel: Codable{
+class SecondMediaSquenceModel: Codable{
     var assetPath: String?
     let duration: Double
     let type: Int
@@ -22,7 +22,7 @@ struct SecondMediaSquenceModel: Codable{
 }
 
 
-struct SecondVideoComposerItem{
+class SecondVideoComposerItem{
     var sequenceId: UUID?
     var track: AVAssetTrack?
     var duration: CMTimeRange?

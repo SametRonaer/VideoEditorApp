@@ -24,8 +24,12 @@ class SecondIoService : NSObject, UIImagePickerControllerDelegate, UINavigationC
     }
     
     func pickAsset(controller: UIViewController, sequence: SecondMediaSquenceModel) {
+     
         let picker = UIImagePickerController()
-        var myMedia: [UTType] = getMediaTypes(typeId: sequence.type)
+        //TODO fix here
+        //var myMedia: [UTType] = getMediaTypes(typeId: sequence.type)
+        //myMedia.append(.video)
+        var myMedia: [UTType] = []
         myMedia.append(.movie)
         picker.delegate = self
         picker.sourceType = .savedPhotosAlbum
@@ -36,6 +40,7 @@ class SecondIoService : NSObject, UIImagePickerControllerDelegate, UINavigationC
         if let id = sequence.id{
             taskOwnerIds.append(id)
             controller.present(picker, animated: true)
+            print("Boo")
         }
     }
     

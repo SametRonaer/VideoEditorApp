@@ -36,9 +36,13 @@ class SecondPickerButton: UIButton{
     }
     
     @objc private func pickAsset(){
-        if let seq = sequenceItem{
-            delegate?.onTap(sequence: seq)
+        print("Something")
+        DispatchQueue.main.async  { [self] in
+            if let seq = sequenceItem{
+                delegate?.onTap(sequence: seq)
+            }
         }
+      
         
         
     }
