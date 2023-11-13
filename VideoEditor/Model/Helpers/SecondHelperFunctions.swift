@@ -5,7 +5,7 @@
 //  Created by Samet Ronaer on 26.10.2023.
 //
 
-import Foundation
+import UIKit
 import AVFoundation
 
 
@@ -33,6 +33,20 @@ func getAssetFromPath(path: String) -> AVURLAsset?{
         return asset
     }
     return nil
+}
+
+func getAssetThumbnail(path: String,onComplete: @escaping (UIImage) -> Void){
+    if let url = URL(string: path){
+        AVAsset(url: url).generateThumbnail {image in
+                       DispatchQueue.main.async {
+                           if let image = image{
+                               onComplete(image)
+                           }
+                         
+                       }
+                   }
+    }
+ 
 }
 
 func getVideoTrackOfAsset(asset: AVAsset) -> AVAssetTrack?{

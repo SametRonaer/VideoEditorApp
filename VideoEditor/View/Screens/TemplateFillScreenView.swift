@@ -16,19 +16,37 @@ protocol TemplateFillScreenViewDelegate{
 class TemplateFillScreenView: UIView{
     
     var delegate: TemplateFillScreenViewDelegate?
-
+    var videoArea: VideoArea!
+    var timeline: UIView?
+    
     
     init() {
         super.init(frame: CGRect.zero)
+        /*
         let button = UIButton()
         button.setTitle("Play", for: .normal)
-        button.backgroundColor = .blue
+        button.tintColor = .white
+        
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(play), for: .touchUpInside)
         addSubview(button)
         button.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         button.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-      
+        */
+        self.backgroundColor = .white
+        addVideoArea()
+        
+    }
+    
+
+    private func addVideoArea(){
+        videoArea = VideoArea()
+        videoArea.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(videoArea)
+        videoArea.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor).isActive = true
+        videoArea.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -180).isActive = true
+        videoArea.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
+        videoArea.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
     }
     
     
@@ -43,12 +61,13 @@ class TemplateFillScreenView: UIView{
         //timeLine.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
       //  timeLine.leadingAnchor.constraint(equalTo: leftAnchor).isActive = true
         //let myView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        self.timeline = timeLine
         addSubview(timeLine)
         
         
-        timeLine.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        timeLine.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20).isActive = true
         timeLine.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        timeLine.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        timeLine.heightAnchor.constraint(equalToConstant: 150).isActive = true
         timeLine.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     

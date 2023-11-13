@@ -5,7 +5,7 @@
 //  Created by Samet Ronaer on 26.10.2023.
 //
 
-import Foundation
+import UIKit
 import AVFoundation
 
 
@@ -26,4 +26,5 @@ class SecondVideoComposerItem{
     var sequenceId: UUID?
     var track: AVAssetTrack?
     var duration: CMTimeRange?
+    var thumbnail: UIImage?
 }

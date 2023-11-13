@@ -10,7 +10,6 @@
 import AVFoundation
 
 
-
 class SecondPlayService{
     var currentPlayerItem: AVPlayerItem?
     

@@ -22,6 +22,8 @@
 		1C7AAB842AE9D751009052B5 /* SecondPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB832AE9D751009052B5 /* SecondPickerButton.swift */; };
 		1C7AAB862AEA8F92009052B5 /* SecondTimelineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB852AEA8F92009052B5 /* SecondTimelineFactory.swift */; };
 		1C7AAB882AEAB5E6009052B5 /* SecondPlayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB872AEAB5E6009052B5 /* SecondPlayService.swift */; };
+		1C7AAB8A2AEAC0A7009052B5 /* DummyPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB892AEAC0A7009052B5 /* DummyPlayerVC.swift */; };
+		1C7AAB8C2AEAC550009052B5 /* DummyPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AAB8B2AEAC550009052B5 /* DummyPlayerView.swift */; };
 		1CA3D4142AD7C66A000B9CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4132AD7C66A000B9CD9 /* AppDelegate.swift */; };
 		1CA3D4162AD7C66A000B9CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4152AD7C66A000B9CD9 /* SceneDelegate.swift */; };
 		1CA3D4182AD7C66A000B9CD9 /* TemplateFillScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4172AD7C66A000B9CD9 /* TemplateFillScreenVC.swift */; };
@@ -35,6 +37,10 @@
 		1CA3D4352AD94E39000B9CD9 /* AssetPlayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4342AD94E39000B9CD9 /* AssetPlayService.swift */; };
 		1CA3D4382AD99F53000B9CD9 /* AssetPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D4372AD99F53000B9CD9 /* AssetPickerButton.swift */; };
 		1CA3D43E2ADAB40A000B9CD9 /* TimelineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA3D43D2ADAB40A000B9CD9 /* TimelineFactory.swift */; };
+		1CA60A0D2AFF4B2F006A68FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA60A0C2AFF4B2F006A68FD /* Extensions.swift */; };
+		1CA60A102AFF7041006A68FD /* TemplateFillScreenTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA60A0F2AFF7041006A68FD /* TemplateFillScreenTopBar.swift */; };
+		1CA60A132B00C34C006A68FD /* VideoPlayerTimeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA60A122B00C34C006A68FD /* VideoPlayerTimeBar.swift */; };
+		1CA60A162B00C4D8006A68FD /* VideoArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA60A152B00C4D8006A68FD /* VideoArea.swift */; };
 		1CEDA4CC2AE5AF0B000AE48C /* VideoComposerConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA4CB2AE5AF0B000AE48C /* VideoComposerConfigModel.swift */; };
 		1CEDA4CF2AE5B117000AE48C /* VideoComposerParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA4CE2AE5B117000AE48C /* VideoComposerParser.swift */; };
 		1CEDA4D12AE6E53C000AE48C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDA4D02AE6E53C000AE48C /* DummyData.swift */; };
@@ -56,6 +62,8 @@
 		1C7AAB832AE9D751009052B5 /* SecondPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPickerButton.swift; sourceTree = "<group>"; };
 		1C7AAB852AEA8F92009052B5 /* SecondTimelineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTimelineFactory.swift; sourceTree = "<group>"; };
 		1C7AAB872AEAB5E6009052B5 /* SecondPlayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPlayService.swift; sourceTree = "<group>"; };
+		1C7AAB892AEAC0A7009052B5 /* DummyPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPlayerVC.swift; sourceTree = "<group>"; };
+		1C7AAB8B2AEAC550009052B5 /* DummyPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPlayerView.swift; sourceTree = "<group>"; };
 		1CA3D4102AD7C66A000B9CD9 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA3D4132AD7C66A000B9CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA3D4152AD7C66A000B9CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +79,10 @@
 		1CA3D4342AD94E39000B9CD9 /* AssetPlayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPlayService.swift; sourceTree = "<group>"; };
 		1CA3D4372AD99F53000B9CD9 /* AssetPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPickerButton.swift; sourceTree = "<group>"; };
 		1CA3D43D2ADAB40A000B9CD9 /* TimelineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineFactory.swift; sourceTree = "<group>"; };
+		1CA60A0C2AFF4B2F006A68FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1CA60A0F2AFF7041006A68FD /* TemplateFillScreenTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateFillScreenTopBar.swift; sourceTree = "<group>"; };
+		1CA60A122B00C34C006A68FD /* VideoPlayerTimeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTimeBar.swift; sourceTree = "<group>"; };
+		1CA60A152B00C4D8006A68FD /* VideoArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoArea.swift; sourceTree = "<group>"; };
 		1CEDA4CB2AE5AF0B000AE48C /* VideoComposerConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoComposerConfigModel.swift; sourceTree = "<group>"; };
 		1CEDA4CE2AE5B117000AE48C /* VideoComposerParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoComposerParser.swift; sourceTree = "<group>"; };
 		1CEDA4D02AE6E53C000AE48C /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
@@ -287,6 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				1CA3D4172AD7C66A000B9CD9 /* TemplateFillScreenVC.swift */,
+				1C7AAB892AEAC0A7009052B5 /* DummyPlayerVC.swift */,
+				1C7AAB8B2AEAC550009052B5 /* DummyPlayerView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +329,9 @@
 		1CA3D4362AD99F23000B9CD9 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				1CA60A142B00C4A3006A68FD /* VideoArea */,
+				1CA60A112B00C328006A68FD /* VideoPlayerTimeBar */,
+				1CA60A0E2AFF7014006A68FD /* TemplateFillScreenTopBar */,
 				1CA3D43A2ADAAA26000B9CD9 /* AssetPickerTimeline */,
 				1CA3D4392ADAAA11000B9CD9 /* Buttons */,
 			);
@@ -339,6 +356,30 @@
 			path = AssetPickerTimeline;
 			sourceTree = "<group>";
 		};
+		1CA60A0E2AFF7014006A68FD /* TemplateFillScreenTopBar */ = {
+			isa = PBXGroup;
+			children = (
+				1CA60A0F2AFF7041006A68FD /* TemplateFillScreenTopBar.swift */,
+			);
+			path = TemplateFillScreenTopBar;
+			sourceTree = "<group>";
+		};
+		1CA60A112B00C328006A68FD /* VideoPlayerTimeBar */ = {
+			isa = PBXGroup;
+			children = (
+				1CA60A122B00C34C006A68FD /* VideoPlayerTimeBar.swift */,
+			);
+			path = VideoPlayerTimeBar;
+			sourceTree = "<group>";
+		};
+		1CA60A142B00C4A3006A68FD /* VideoArea */ = {
+			isa = PBXGroup;
+			children = (
+				1CA60A152B00C4D8006A68FD /* VideoArea.swift */,
+			);
+			path = VideoArea;
+			sourceTree = "<group>";
+		};
 		1CEDA4CA2AE5AED8000AE48C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +395,7 @@
 				1CEDA4CE2AE5B117000AE48C /* VideoComposerParser.swift */,
 				1CEDA4D02AE6E53C000AE48C /* DummyData.swift */,
 				1C7AAB812AE9C15D009052B5 /* SecondHelperFunctions.swift */,
+				1CA60A0C2AFF4B2F006A68FD /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -433,9 +475,13 @@
 				1CA3D4352AD94E39000B9CD9 /* AssetPlayService.swift in Sources */,
 				1CA3D4332AD80C0F000B9CD9 /* ItemsDashboardService.swift in Sources */,
 				1CA3D42E2AD7CDE2000B9CD9 /* TemplateFillScreenView.swift in Sources */,
+				1CA60A102AFF7041006A68FD /* TemplateFillScreenTopBar.swift in Sources */,
+				1C7AAB8C2AEAC550009052B5 /* DummyPlayerView.swift in Sources */,
 				1C02078D2AE295A0002EDDC3 /* AssetIoServiceAbstract.swift in Sources */,
 				1C7AAB802AE9BA46009052B5 /* SecondIoService.swift in Sources */,
 				1C0207872AE294D3002EDDC3 /* AssetPlayServiceAbstracy.swift in Sources */,
+				1C7AAB8A2AEAC0A7009052B5 /* DummyPlayerVC.swift in Sources */,
+				1CA60A162B00C4D8006A68FD /* VideoArea.swift in Sources */,
 				1C7AAB7E2AE9B796009052B5 /* SecondComposerService.swift in Sources */,
 				1CEDA4CF2AE5B117000AE48C /* VideoComposerParser.swift in Sources */,
 				1C7AAB792AE9B74B009052B5 /* SecondSystemModels.swift in Sources */,
@@ -446,11 +492,13 @@
 				1C02078B2AE29570002EDDC3 /* AssetEditServiceAbstract.swift in Sources */,
 				1CA3D42C2AD7C7A0000B9CD9 /* AssetIOService.swift in Sources */,
 				1CA3D4182AD7C66A000B9CD9 /* TemplateFillScreenVC.swift in Sources */,
+				1CA60A0D2AFF4B2F006A68FD /* Extensions.swift in Sources */,
 				1CA3D4142AD7C66A000B9CD9 /* AppDelegate.swift in Sources */,
 				1C7AAB842AE9D751009052B5 /* SecondPickerButton.swift in Sources */,
 				1C7AAB862AEA8F92009052B5 /* SecondTimelineFactory.swift in Sources */,
 				1C02076F2ADE9DD5002EDDC3 /* VideoPlayerService.swift in Sources */,
 				1CA3D4312AD7F2C3000B9CD9 /* EditAssetService.swift in Sources */,
+				1CA60A132B00C34C006A68FD /* VideoPlayerTimeBar.swift in Sources */,
 				1C02078F2AE2AACE002EDDC3 /* VideoPlayerItem.swift in Sources */,
 				1CA3D4162AD7C66A000B9CD9 /* SceneDelegate.swift in Sources */,
 				1C0207892AE29518002EDDC3 /* ItemDashboardServiceAbstract.swift in Sources */,
@@ -609,7 +657,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,7 +685,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

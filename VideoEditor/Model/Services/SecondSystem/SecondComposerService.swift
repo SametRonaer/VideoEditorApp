@@ -48,7 +48,10 @@ class SecondComposerService{
     
     private func initializeTimeline(){
         if let config = config{
-            timeline = SecondTimelineFactory(config: config, ioService: ioService, pickerButtonDelegate: self).getTimeline()
+            timeline = SecondTimelineFactory(config: config,
+                                             ioService: ioService,
+                                             pickerButtonDelegate: self,
+                                             dashboardService: dashboardService!).getTimeline()
         }
         
     }
@@ -71,11 +74,16 @@ extension SecondComposerService: SecondIoServiceSubscriber{
             //TODO add here to image video seperator. Now it assume picked asset always video
             
             if let asset = getAssetFromPath(path: path){
-                var item = SecondVideoComposerItem()
-                item.track = getVideoTrackOfAsset(asset: asset)
-                item.sequenceId = currentItem.id
-                item.duration = getComposerItemTimeRange(duration: currentItem.duration)
-                dashboardService?.addNewComposerItemToDashboard(item: item)
+                getAssetThumbnail(path: path) { [self] image in
+                    var item = SecondVideoComposerItem()
+                    item.track = getVideoTrackOfAsset(asset: asset)
+                    item.sequenceId = currentItem.id
+                    item.duration = getComposerItemTimeRange(duration: currentItem.duration)
+                    item.thumbnail = image
+                    dashboardService?.addNewComposerItemToDashboard(item: item)
+                }
+                
+            
             }
             
             

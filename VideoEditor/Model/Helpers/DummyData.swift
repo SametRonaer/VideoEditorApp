@@ -55,7 +55,12 @@ class DummyData{
         {
             "type": 1,
             "duration": 25.0
+        },
+        {
+            "type": 1,
+            "duration": 25.0
         }
+       
     ]
 }
 

@@ -51,7 +51,6 @@ class TemplateFillScreenVC: UIViewController {
     func configureTemplateView(){
        
         templateFillScreenView = TemplateFillScreenView()
-        templateFillScreenView.backgroundColor = .white
         templateFillScreenView.delegate = self
         
        // videoPlayerService?.configTemplateView(configData:  DummyData.dummyTimeline, templateView: templateFillScreenView)
