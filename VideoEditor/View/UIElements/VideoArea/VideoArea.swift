@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import AVFoundation
+
+protocol VideoAreaDelegate{
+    func playVideo()
+    func stopVideo()
+}
 
 class VideoArea: UIView{
+    var delegate: VideoAreaDelegate?
     
     private var isPlaying: Bool = false
     private var playButton: UIButton?
@@ -140,6 +147,15 @@ class VideoArea: UIView{
         topBar.configureButtons()
     }
     
+    private func addPlayerLayer(){
+        
+    }
+    
+    override class var layerClass: AnyClass{
+        return AVPlayerLayer.self
+    }
+    
+    
 }
 
 
@@ -150,8 +166,10 @@ extension VideoArea{
         isPlaying = !isPlaying
         if isPlaying{
             image = UIImage(systemName: pauseImage)
+            delegate?.playVideo()
         }else{
             image = UIImage(systemName: playImage)
+            delegate?.stopVideo()
         }
         playButton?.setImage(image, for: .normal)
     }

@@ -50,9 +50,7 @@ func getAssetThumbnail(path: String,onComplete: @escaping (UIImage) -> Void){
 }
 
 func getVideoTrackOfAsset(asset: AVAsset) -> AVAssetTrack?{
-    if let videoTrack = asset.tracks.first(where: { track in
-        return track.mediaType == .video
-    }){
+    if let videoTrack = asset.tracks(withMediaType: AVMediaType.video).first{
         return videoTrack
     }
     return nil

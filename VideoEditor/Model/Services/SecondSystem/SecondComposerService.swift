@@ -13,11 +13,18 @@ class SecondComposerService{
     let configData: String
     let vc: UIViewController
     
+    
     private var dashboardService: SecondDashboardService?
     private var ioService: SecondIoService = SecondIoService()
     private var playService: SecondPlayService = SecondPlayService(frame: CGRectMake(30, 30, 150, 250))
     private var timeline: UIView?
     private var config: SecondConfigModel?
+    
+    var player: AVPlayer {
+        get{
+            return playService.player
+        }
+    }
     
     init(configData: String, vc: UIViewController) {
         self.vc = vc
@@ -39,9 +46,10 @@ class SecondComposerService{
     
     func playCurrentComposition(){
         print("Play")
-        if let items = dashboardService?.composerItems{
-            playService.playCurrentComposition(items: items)
+        if let composition = dashboardService?.getComposition(){
+            playService.playAsset(asset: composition)
         }
+       
     }
     
     
@@ -76,9 +84,8 @@ extension SecondComposerService: SecondIoServiceSubscriber{
             if let asset = getAssetFromPath(path: path){
                 getAssetThumbnail(path: path) { [self] image in
                     var item = SecondVideoComposerItem()
-                    item.track = getVideoTrackOfAsset(asset: asset)
+                    item.asset = asset
                     item.sequenceId = currentItem.id
-                    item.duration = getComposerItemTimeRange(duration: currentItem.duration)
                     item.thumbnail = image
                     dashboardService?.addNewComposerItemToDashboard(item: item)
                 }

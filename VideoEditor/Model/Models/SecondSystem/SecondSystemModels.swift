@@ -24,7 +24,7 @@ class SecondMediaSquenceModel: Codable{
 
 class SecondVideoComposerItem{
     var sequenceId: UUID?
-    var track: AVAssetTrack?
+    var asset: AVAsset?
     var duration: CMTimeRange?
     var thumbnail: UIImage?
 }

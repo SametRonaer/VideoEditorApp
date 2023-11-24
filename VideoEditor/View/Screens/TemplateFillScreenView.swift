@@ -41,6 +41,7 @@ class TemplateFillScreenView: UIView{
 
     private func addVideoArea(){
         videoArea = VideoArea()
+        videoArea.delegate = self
         videoArea.translatesAutoresizingMaskIntoConstraints = false
         addSubview(videoArea)
         videoArea.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor).isActive = true
@@ -124,3 +125,14 @@ class TemplateFillScreenView: UIView{
     
 }
 
+extension TemplateFillScreenView: VideoAreaDelegate{
+    func playVideo() {
+        self.delegate?.playVideo()
+    }
+    
+    func stopVideo() {
+        print("Stop")
+    }
+    
+    
+}

@@ -13,7 +13,7 @@ import AVFoundation
 class SecondPlayService{
     var currentPlayerItem: AVPlayerItem?
     
-    var player: AVPlayer?
+    var player: AVPlayer =  AVPlayer()
     
     var currentAsset: AVAsset?
     
@@ -37,17 +37,17 @@ class SecondPlayService{
     }
     
     private func configurePlayer(){
-        player = AVPlayer()
+        
         playerLayer = AVPlayerLayer(player: player)
         playerLayer?.frame = playerFrame ?? .zero
     }
     
     
-    func playCurrentComposition(items: [SecondVideoComposerItem]){
+    func playCurrentComposition(asset: AVAsset){
         print("Play")
         //let composition = getComposition(items: items)
-        //playAsset(asset: composition)
-        dummyPlayer()
+        playAsset(asset: asset)
+        //dummyPlayer()
     }
     
     private func getComposition(items: [SecondVideoComposerItem]) -> AVComposition{
@@ -72,14 +72,8 @@ class SecondPlayService{
             print("Please fill player layer to play")
             return
         }
+        player.play()
         
-        if player == nil{
-            player = AVPlayer(playerItem: currentPlayerItem)
-        }else{
-            player!.replaceCurrentItem(with: currentPlayerItem)
-        }
-        
-        player?.play()
         
         subscribers.forEach({
             $0.didPlay()
@@ -94,8 +88,8 @@ class SecondPlayService{
             let playerItem = AVPlayerItem(url: URL(string: path)!)
             
             // create player using player item
-            player!.replaceCurrentItem(with: playerItem)
-            player!.play()
+            //player!.replaceCurrentItem(with: playerItem)
+            //player!.play()
             print("Boo")
             
         // create AVPlayerLayer for the player and add to the player view
@@ -107,14 +101,14 @@ class SecondPlayService{
         }
     
     func stopAsset() {
-        player?.pause()
+       // player?.pause()
         subscribers.forEach({
             $0.didStop()
         })
     }
     
     func pauseAsset() {
-        player?.pause()
+       // player?.pause()
         subscribers.forEach({
             $0.didPause()
         })
