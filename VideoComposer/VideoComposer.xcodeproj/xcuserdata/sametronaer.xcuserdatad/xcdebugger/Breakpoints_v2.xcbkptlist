@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8EDF8937-584F-498A-A2F9-DB75D5F8DCD7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E806101F-E062-473F-BB5C-4E9379EF6C8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoComposer/Model/Services/ComposerService/Concrete/ComposerService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "playComposition()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3ED2407-08E6-4A13-8BED-3EE51EAF22F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoComposer/Model/Services/PlayService/Concrete/PlayService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "playCurrentComposition(composition:playerLayer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CE2E9D7-BCD9-489C-9B54-990E538A20FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getCurrentComposition()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80A4E57C-49AE-437B-8C75-787B3CE083CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getCurrentComposition()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "80A4E57C-49AE-437B-8C75-787B3CE083CA - c4fa2c88d92b151d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VideoComposer.DashboardService.getCurrentComposition() -&gt; __C.AVAsset"
+                  moduleName = "VideoComposer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sametronaer/Desktop/iOS%20Projects/VideoComposer/VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+               <Location
+                  uuid = "80A4E57C-49AE-437B-8C75-787B3CE083CA - c4fa2c88d92b151d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VideoComposer.DashboardService.getCurrentComposition() -&gt; __C.AVAsset"
+                  moduleName = "VideoComposer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sametronaer/Desktop/iOS%20Projects/VideoComposer/VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79DB9C05-E14A-4623-9BA7-41CED317AAAD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getCurrentComposition()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "79DB9C05-E14A-4623-9BA7-41CED317AAAD - c4fa2c88d92b14d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VideoComposer.DashboardService.getCurrentComposition() -&gt; __C.AVAsset"
+                  moduleName = "VideoComposer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sametronaer/Desktop/iOS%20Projects/VideoComposer/VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1540">
+               </Location>
+               <Location
+                  uuid = "79DB9C05-E14A-4623-9BA7-41CED317AAAD - c4fa2c88d92b14f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VideoComposer.DashboardService.getCurrentComposition() -&gt; __C.AVAsset"
+                  moduleName = "VideoComposer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sametronaer/Desktop/iOS%20Projects/VideoComposer/VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1780">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "697925B3-7C59-4528-A393-6EEB5DF8E0B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getCurrentComposition()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "697925B3-7C59-4528-A393-6EEB5DF8E0B1 - c4fa2c88d92b15fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VideoComposer.DashboardService.getCurrentComposition() -&gt; __C.AVAsset"
+                  moduleName = "VideoComposer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sametronaer/Desktop/iOS%20Projects/VideoComposer/VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "697925B3-7C59-4528-A393-6EEB5DF8E0B1 - c4fa2c88d92b15fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VideoComposer.DashboardService.getCurrentComposition() -&gt; __C.AVAsset"
+                  moduleName = "VideoComposer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sametronaer/Desktop/iOS%20Projects/VideoComposer/VideoComposer/Model/Services/DashboardService/Concrete/DashboardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "380">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
